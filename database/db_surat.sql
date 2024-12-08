@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Nov 2024 pada 01.04
+-- Waktu pembuatan: 08 Des 2024 pada 22.49
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -68,7 +68,7 @@ CREATE TABLE `tb_bagian` (
 INSERT INTO `tb_bagian` (`id_bagian`, `nama_bagian`, `username_admin_bagian`, `password_bagian`, `nama_lengkap`, `tanggal_lahir_bagian`, `alamat`, `no_hp_bagian`, `gambar`) VALUES
 (23, 'PEND.MADRASAH', 'madrasah', 'a60a2e8a943517a1b028a6a0a7ddfada5624b634', 'Dwi Andriyani', '2003-03-17', 'TOPO', '082109345849', 'madrasah.jpg'),
 (24, 'TATA USAHA', 'tu', 'a3da4c6307d230e1f1c8ad62e00d05ff1f1f5b52', 'Harris J', '2004-11-18', 'TOMALOU', '082145789230', 'tu.jpg'),
-(25, 'PEND. AGAMA ISLAM', 'agama', 'a2be9b448cc1a650c6fac671486061ad3ca4ca49', 'Nicolas Saputra', '2004-11-20', 'GOTO', '082186453467', 'agama.jpg'),
+(25, 'PEND. AGAMA ISLAM', 'agama', '008b9083ba7e1a10f422040070c6d14e4a9c128a', 'Nicolas Saputra', '2004-11-20', 'GOTO', '082186453467', 'agama.jpg'),
 (26, 'PENY. HAJI DAN UMROH', 'haji', 'd9078c9bb2faa4a6b22f6971ed825b13ab4d1363', 'Afifah Naufal', '1999-10-22', 'TOPO TIGA', '082191567890', 'haji.jpg'),
 (27, 'BIMAS ISLAM', 'islam', '0f315d32ad05a7148f0eb1aaf054599c1712198f', 'Azzrahra Syamila', '2003-09-30', 'TONGOWAI', '083245678902', 'islam.jpg'),
 (28, 'PENY. ZAKAT DAN WAKAF', 'zakat', '84b13242c3f67ce815e4ef5b16ca56b69c959fe0', 'Naufal Dary Ayyash', '2001-01-01', 'GURABUNGA', '082195678921', 'zakat.jpg'),
@@ -133,7 +133,9 @@ CREATE TABLE `tb_suratmasuk` (
 --
 
 INSERT INTO `tb_suratmasuk` (`id_suratmasuk`, `tanggalmasuk_suratmasuk`, `kode_suratmasuk`, `nomorurut_suratmasuk`, `nomor_suratmasuk`, `tanggalsurat_suratmasuk`, `pengirim`, `kepada_suratmasuk`, `perihal_suratmasuk`, `file_suratmasuk`, `operator`, `tanggal_entry`, `disposisi1`, `tanggal_disposisi1`, `disposisi2`, `tanggal_disposisi2`, `disposisi3`, `tanggal_disposisi3`) VALUES
-(9, '2024-11-18 21:54:00', '08', '0001 ', '006', '2024-11-18', 'Kantor Wilayah Kemenag ', 'Bpk. Dwi Anggara S.Pd', 'Surat Undangan Narasumber', '2024-0001.pdf', 'Mingyu', '2024-11-18 19:55:17', 'TATA USAHA', '2024-10-29 10:19:00', 'TATA USAHA', '2024-10-30 10:20:00', 'PEND.MADRASAH', '2024-10-30 10:20:00');
+(9, '2024-11-18 21:54:00', '008', '0001', '006', '2024-11-18', 'Kantor Wilayah Kemenag ', 'Pend.madrasah', 'Surat Undangan Narasumber', '2024-0001.pdf', 'Mingyu', '2024-11-24 20:44:28', 'TATA USAHA', '2024-10-29 10:19:00', 'TATA USAHA', '2024-10-30 10:20:00', 'PEND.MADRASAH', '2024-10-30 10:20:00'),
+(10, '2024-11-22 10:03:00', '003', '0002', '145', '2024-11-22', 'Kemenag Tikep', 'Kemenag Oba Utara', 'Pelantikan Ketua Kemenag', '2024-0002.pdf', 'Mingyu', '2024-11-24 20:26:44', 'PENY. HAJI DAN UMROH', '2024-10-29 10:19:00', 'PEND.MADRASAH', '2024-10-22 10:19:00', 'BIMAS KATOLIK', '2024-10-30 10:20:00'),
+(11, '2024-11-20 10:04:00', '008', '0003', '006', '2024-11-20', 'Kemenag Tikep', 'Pend. Madrasah', 'Undangan Narasumber', '2024-0003.pdf', 'Mingyu', '2024-11-24 20:28:27', 'TATA USAHA', '2024-10-29 10:19:00', 'PEND.MADRASAH', '2024-10-22 10:19:00', 'BIMAS ISLAM', '2024-10-30 10:20:00');
 
 --
 -- Indexes for dumped tables
@@ -193,7 +195,7 @@ ALTER TABLE `tb_suratkeluar`
 -- AUTO_INCREMENT untuk tabel `tb_suratmasuk`
 --
 ALTER TABLE `tb_suratmasuk`
-  MODIFY `id_suratmasuk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_suratmasuk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
